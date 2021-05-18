@@ -71,7 +71,6 @@ namespace Opsive.UltimateCharacterController.Camera
         protected override void Awake()
         {
             base.Awake();
-            
             m_Transform = transform;
             m_Colliders = new Collider[m_MaxSwitchTargetColliders];
             m_MaxDistanceSquared = m_MaxDistance * m_MaxDistance;
@@ -79,6 +78,8 @@ namespace Opsive.UltimateCharacterController.Camera
             EventHandler.RegisterEvent<GameObject>(gameObject, "OnCameraAttachCharacter", OnAttachCharacter);
         }
 
+
+       
         /// <summary>
         /// Attaches the component to the specified character.
         /// </summary>
